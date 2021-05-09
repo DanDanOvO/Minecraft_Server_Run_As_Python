@@ -20,7 +20,7 @@ def download_buildtools():
 
 def build_jar():
     """编译核心"""
-    subprocess.run('java  -Xmx1024M -jar BuildTools.jar')
+    subprocess.run('java -Xmx1024M -jar BuildTools.jar')
 
 
 def build_minecraft():
