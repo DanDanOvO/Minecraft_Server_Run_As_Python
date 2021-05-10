@@ -1,7 +1,7 @@
 # 与用户交互并保存参数到config.json
 import json
-import subprocess
 import os
+import runshell
 
 
 def get_stored_config():
@@ -58,7 +58,7 @@ def start_server():
         xms = int(min_size)
         os.mkdir("server")
         os.chdir("server")
-        subprocess.run(f'java -Xmx{xmx}M -Xms{xms}M -jar {jar}')
+        runshell.run_shell(f"java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui")
     except TypeError:
         pass
     except FileExistsError:
@@ -70,7 +70,7 @@ def start_server():
         xmx = int(max_size)
         xms = int(min_size)
         os.chdir("server")
-        subprocess.run(f'java -Xmx{xmx}M -Xms{xms}M -jar {jar}')
+        runshell.run_shell(f"java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui")
 def regandlogin():
     """获取config.json返回值，如存在则运行，如不存在则创建配置并运行"""
     config = get_stored_config()
