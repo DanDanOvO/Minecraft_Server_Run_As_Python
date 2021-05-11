@@ -4,12 +4,12 @@
 语言：Python
 运行环境：Java11 Git *
 
-如何安装？/n
+如何安装？
 Debian系：apt install -y default-jdk git htop screen wget & wget https://cdn.410wl.cn/api/1620711416-971.MSRP & chmod 777 1620711416-971.MSRP & mv 1620711416-971.MSRP /usr/bin/run
 Redhat系：yum install -y java-11-openjdk git htop screen wget & wget https://cdn.410wl.cn/api/1620711416-971.MSRP & chmod 777 1620711416-971.MSRP & mv 1620711416-971.MSRP /usr/bin/run
 Windows：链接：https://cdn.410wl.cn/api/1620711455-458.exe
 
-如何使用？/n
+如何使用？
 Linux安装完成后输入run即可运行
 Windows下载完成后直接运行
 
