@@ -12,6 +12,7 @@ def cli(u_input=0):
         print("(1) 启动服务器           (2) 自动编译最新的spigot核心")
         print("(3) 修改启动参数         (4) 一键创建服务器")
         print("(5) Linux强制关闭服务器  (6)Windows强制关闭服务器")
+        print("(7) 获取Rcon端口与密码")
         print("(0) 取消")
         print("===============使用方法==================")
         print("如果您首次运行且没有服务端,请先使用(2)编译核心,然后使用(4)创建服务器")
@@ -26,7 +27,7 @@ def cli(u_input=0):
         except:
             u_input = 0
 
-    nums = [1, 2, 3, 4, 5, 6]
+    nums = [1, 2, 3, 4, 5, 6, 7]
     if not u_input in nums:
         print(raw_tip)
         print("已取消!")
@@ -44,15 +45,25 @@ def cli(u_input=0):
         cli()
     elif u_input == 3:
         RunServer.get_new_config()
+        RunServer.rcon()
         print("修改完成")
         cli()
     elif u_input == 4:
         AutoRUN.autorun()
+        RunServer.rcon()
         RunServer.start_server()
     elif u_input == 5:
         runshell.run_shell("ps -ef | grep java | grep -v grep | awk '{print $2}' | xargs kill -9")
     elif u_input == 6:
         runshell.run_shell("taskkill /F /IM java.exe")
+    elif u_input == 7:
+        config = RunServer.get_stored_config()
+        dict_config = eval(config)
+        rconpass = dict_config["rconpass"]
+        rconport = dict_config["rconport"]
+        print("您的Rcon配置为")
+        print(f"密码 {rconpass}")
+        print(f"端口 {rconport}")
 
 
 cli()

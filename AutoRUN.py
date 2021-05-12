@@ -2,6 +2,7 @@
 import json
 import os
 import shutil
+import newpassword
 
 
 def autorun():
@@ -37,7 +38,18 @@ def autorun():
                 print("内存不可以为0")
             else:
                 filename = 'config.json'
-                config = {"maxsize": f"{maxmemory}", "minsize": f"{minmemory}", "jar": f"{jar}"}
+                rconpass = newpassword.password()
+                rconport = newpassword.port()
+                print(f"您设置的最大内存为{maxmemory}")
+                print(f"您设置的最小内存为{minmemory}")
+                print("您的Rcon配置为")
+                print(f"密码 {rconpass}")
+                print(f"端口 {rconport}")
+                print("请使用Rcon客户端控制服务器")
+                print("例如rcon.iecraft.com")
+                config = {"maxsize": f"{maxmemory}", "minsize": f"{minmemory}", "jar": f"{jar}",
+                          "rconpass": f"{rconpass}",
+                          "rconport": f"{rconport}"}
                 jsondata = json.dumps(config)
                 with open(filename, 'w') as f:
                     json.dump(jsondata, f)
@@ -73,7 +85,18 @@ def autorun():
                 print("内存不可以为0")
             else:
                 filename = 'config.json'
-                config = {"maxsize": f"{maxmemory}", "minsize": f"{minmemory}", "jar": f"{jar}"}
+                rconpass = newpassword.password()
+                rconport = newpassword.port()
+                print(f"您设置的最大内存为{maxmemory}")
+                print(f"您设置的最小内存为{minmemory}")
+                print("您的Rcon配置为")
+                print(f"密码 {rconpass}")
+                print(f"端口 {rconport}")
+                print("请使用Rcon客户端控制服务器")
+                print("例如rcon.iecraft.com")
+                config = {"maxsize": f"{maxmemory}", "minsize": f"{minmemory}", "jar": f"{jar}",
+                          "rconpass": f"{rconpass}",
+                          "rconport": f"{rconport}"}
                 jsondata = json.dumps(config)
                 with open(filename, 'w') as f:
                     json.dump(jsondata, f)
