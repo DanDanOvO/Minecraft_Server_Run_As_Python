@@ -26,17 +26,17 @@
 - 更新软件源列表
 - `apt update`
 - 获取并安装该程序 
-- `apt install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s hutu /usr/bin/hutu`
+- `apt install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s -f /root/hutu /usr/bin/ht`
 ##### Redhat系：
 - 更新软件源列表
 - `yum update`
 - 获取并安装改成该程序 
-- `yum install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s hutu /usr/bin/hutu`
+- `yum install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s -f /root/hutu /usr/bin/ht`
 ##### Windows：
 - 预计下个版本更新
 ### 3.操作说明
 ##### Linux：
-- 直接输入`hutu`运行
+- 直接输入`ht`运行
 ##### Windows：
 - 可以直接双击运行
 - 但更推荐使用cmd运行
