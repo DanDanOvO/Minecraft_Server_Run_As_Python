@@ -18,12 +18,12 @@
 - 更新软件源列表
 - `apt update`
 - 获取并安装该程序 
-- `apt install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & In -s hutu /usr/bin/run`
+- `apt install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & ln -s hutu /usr/bin/run`
 ##### Redhat系：
 - 更新软件源列表
 - `yum update`
 - 获取并安装改成该程序 
-- `yum install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & In -s hutu /usr/bin/run`
+- `yum install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & ln -s hutu /usr/bin/run`
 ##### Windows：
 - 下载该程序
 - `https://cdn.410wl.cn/api/1620711455-458.exe`
