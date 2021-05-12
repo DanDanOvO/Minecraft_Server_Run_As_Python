@@ -1,37 +1,34 @@
 # **糊涂工具箱**
 ### 1.项目说明
 ##### 	本程序可以自动编译最新的spigot核心，轻松的创建服务器，即使您没有开过Minecraft服务器，又或者您没有Linux基础，苦于没有一个简单的方法来维护服务器
+#####   v0.5之后的版本统一使用Rcon进行服务器管理
 ### 2.安装运行
 #### 必须的：
 - Java11
 - Git
 #### 可选的：
-- screen
+- ~~screen~~(已经不需要)
 - wget
 - htop
 #####	(1)运行前提条件
 - Windows需要自行安装并配置好Git环境变量
-- Linux在使用前需要用screen创建新的窗口再运行该程序
 
 #####	(2)项目安装步骤
 ##### Debian系：
 - 更新软件源列表
 - `apt update`
 - 获取并安装该程序 
-- `apt install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & ln -s hutu /usr/bin/run`
+- `apt install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s hutu /usr/bin/hutu`
 ##### Redhat系：
 - 更新软件源列表
 - `yum update`
 - 获取并安装改成该程序 
-- `yum install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & ln -s hutu /usr/bin/run`
+- `yum install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s hutu /usr/bin/hutu`
 ##### Windows：
-- 下载该程序
-- `https://cdn.410wl.cn/api/1620711455-458.exe`
-- 放到合适位置运行即可
+- 预计更新
 ### 3.操作说明
 ##### Linux：
-- 先使用screen -S mc server创建窗口
-- 再输入run即可运行
+- 直接输入`hutu`运行
 ##### Windows：
 - 可以直接双击运行
 - 但更推荐使用cmd运行
