@@ -18,7 +18,7 @@
 - 更新软件源列表
 - `apt update`
 - 获取并安装该程序 
-- `apt install -y default-jdk git htop screen wget & wget https://cdn.410wl.cn/api/1620711416-971.MSRP & chmod 777 1620711416-971.MSRP & mv 1620711416-971.MSRP /usr/bin/run`
+- `apt install -y default-jdk git htop screen wget & wget https://github.com/Xingsandesu/Minecraft_Server_Run_As_Python/blob/master/hutu?raw=true & chmod 777 hutu & In hutu /usr/bin/run`
 ##### Redhat系：
 - 更新软件源列表
 - `yum update`
