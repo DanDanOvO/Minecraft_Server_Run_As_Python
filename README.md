@@ -25,7 +25,7 @@
 - 获取并安装改成该程序 
 - `yum install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s hutu /usr/bin/hutu`
 ##### Windows：
-- 预计更新
+- 预计下个版本更新
 ### 3.操作说明
 ##### Linux：
 - 直接输入`hutu`运行
