@@ -68,7 +68,7 @@ def start_server():
         xms = int(min_size)
         os.mkdir("server")
         os.chdir("server")
-        runshell.run_shell(f"nohup java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui >/dev/null 2>&1 &")
+        runshell.run_shell(f"nohup java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui > nohup.log 2>&1 &")
     except TypeError:
         pass
     except FileExistsError:
@@ -80,7 +80,7 @@ def start_server():
         xmx = int(max_size)
         xms = int(min_size)
         os.chdir("server")
-        runshell.run_shell(f"nohup java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui >/dev/null 2>&1 &")
+        runshell.run_shell(f"nohup java -Xmx{xmx}M -Xms{xms}M -jar {jar} nogui > nohup.log 2>&1 &")
 
 
 def regandlogin():
