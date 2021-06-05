@@ -19,7 +19,7 @@
 - wget
 - htop
 #####	(1)运行前提条件
-- Windows需要自行安装并配置好Git环境变量
+- Windows需要自行安装并配置好Git环境变量和python3.9环境
 
 #####	(2)项目安装步骤
 ##### Debian系：
@@ -33,10 +33,10 @@
 - 获取并安装改成该程序 
 - `yum install -y default-jdk git htop wget & wget https://hututu.teriri.cc/hutu & chmod 777 hutu & ln -s -f /root/hutu /usr/bin/ht`
 ##### Windows：
-- 预计下个版本更新
+- 自行测试运行 往后版本不对windows测试
 ### 3.操作说明
 ##### Linux：
 - 直接输入`ht`运行
 ##### Windows：
-- 可以直接双击运行
-- 但更推荐使用cmd运行
+- 下载源码
+- 运行main.py
